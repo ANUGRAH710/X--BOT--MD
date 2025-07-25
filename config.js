@@ -47,7 +47,7 @@ module.exports = {
 	API: "https://api-aswin-sparky.koyeb.app",
 	AUDIO_DATA: process.env.AUDIO_DATA || "ROYAL-XMD;ROYAL SER;https://files.catbox.moe/v84o9c.jpg",
 	AUTO_STATUS_VIEW: toBool(process.env.AUTO_STATUS_VIEW || "true"),
-	BOT_INFO: process.env.BOT_INFO || "ROYAL-XMD;ROYAL SER;https://url.sparky.biz.id/5ftLiA.jpg",
+	BOT_INFO: process.env.BOT_INFO || "ROYAL-XMD;ROYAL SER;https://files.catbox.moe/l354bh.jpg",
 	CALL_BLOCK: toBool(process.env.CALL_BLOCK || "false"),
 	CALL_BLOCK_MSG: process.env.CALL_BLOCK_MSG || "_Calls are not allowed. Please don’t call again!._",
 	DATABASE_URL,
