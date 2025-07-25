@@ -14,7 +14,7 @@ if (fs.existsSync("config.env")) {
 	});
 }
 
-const DATABASE_URL = process.env.DATABASE_URL || "postgresql://neondb_owner:npg_yzqIj3CEXp2d@ep-young-fire-a2xx84dw-pooler.eu-central-1.aws.neon.tech/neondb?sslmode"; // Corrected SQLite format
+const DATABASE_URL = process.env.DATABASE_URL || "postgresql://pv689u3s2yxo2_user:frFfr7jerYSm37wnEDCCqlTCMo32lKks@dpg-d1ikqtili9vc7389nem0-a.oregon-postgres.render.com/pv689u3s2yxo2"; // Corrected SQLite format
 
 if (!DATABASE_URL.startsWith("sqlite://") && !DATABASE_URL.startsWith("postgres://") && !DATABASE_URL.startsWith("postgresql://")) {
 	throw new Error("Invalid DATABASE_URL format. Use 'sqlite://' or 'postgres://'");
@@ -41,13 +41,13 @@ DATABASE.authenticate().then(() => console.log("Database connection established 
 
 module.exports = {
 	VERSION: require("./package.json").version,
-	ALIVE: process.env.ALIVE || "Hello i'm alive",
+	ALIVE: process.env.ALIVE || "HEY THERE ROYAL-XMD IS ALIVE💗🍃",
 	ALWAYS_ONLINE: toBool(process.env.ALWAYS_ONLINE || "false"),
 	BGMBOT : toBool(process.env.BGMBOT || "true"),
 	API: "https://api-aswin-sparky.koyeb.app",
-	AUDIO_DATA: process.env.AUDIO_DATA || "X BOT MD;ASWIN SPARKY;https://files.catbox.moe/ttdne9.jpg",
+	AUDIO_DATA: process.env.AUDIO_DATA || "ROYAL-XMD;ROYAL SER;https://files.catbox.moe/v84o9c.jpg",
 	AUTO_STATUS_VIEW: toBool(process.env.AUTO_STATUS_VIEW || "true"),
-	BOT_INFO: process.env.BOT_INFO || "X-BOT-MD;ASWIN SPARKY;https://url.sparky.biz.id/5ftLiA.jpg",
+	BOT_INFO: process.env.BOT_INFO || "ROYAL-XMD;ROYAL SER;https://url.sparky.biz.id/5ftLiA.jpg",
 	CALL_BLOCK: toBool(process.env.CALL_BLOCK || "false"),
 	CALL_BLOCK_MSG: process.env.CALL_BLOCK_MSG || "_Calls are not allowed. Please don’t call again!._",
 	DATABASE_URL,
@@ -58,7 +58,7 @@ module.exports = {
 	HEROKU_APP_NAME: process.env.HEROKU_APP_NAME || "",
 	KOYEB_API_KEY: process.env.KOYEB_API_KEY || "",
 	KOYEB_SERVICE_NAME: process.env.KOYEB_SERVICE_NAME || "",
-	RENDER_API_KEY: process.env.RENDER_API_KEY || "",
+	RENDER_API_KEY: process.env.RENDER_API_KEY || "rnd_aRgjQMHRvsTWwZTYZiEy8U7lHRXk",
 	RENDER_APP_NAME: process.env.RENDER_APP_NAME || "",
 	LANGUAGE: process.env.LANGUAGE || "english",
 	LOGS: toBool(process.env.LOGS || "false"),
@@ -70,10 +70,10 @@ module.exports = {
 	READ_MESSAGES: toBool(process.env.READ_MESSAGES || "false"),
 	REJECT_CALL: toBool(process.env.REJECT_CALL || "false"),
 	REJECT_CALL_MSG: process.env.REJECT_CALL_MSG || "_Calls are not allowed. Please don’t call again!._",
-	SESSION_ID: process.env.SESSION_ID || "",
+	SESSION_ID: process.env.SESSION_ID || "A-S-W-I-N-S-P-A-R-K-Y:850c6b95aa8d880adbd2a2159dabefea",
 	START_MSG: toBool(process.env.START_MSG || "true"),
 	STICKER_DATA: process.env.STICKER_DATA || `X BOT MD;ASWIN SPARKY`,
-	SUDO: process.env.SUDO || "917012984396",
+	SUDO: process.env.SUDO || "917736321747",
 	WORK_TYPE: process.env.WORK_TYPE || "public",
 	SAVE_STATUS: toBool(process.env.SAVE_STATUS || "false"),
 	STATUS_REPLY: toBool(process.env.STATUS_REPLY || "false"),
