@@ -52,10 +52,10 @@ async ({ m, client, args }) => {
         const q = await getJson(`${config.API}/api/search/gpt3?search=${encodeURIComponent(args)}`);
         
         // Check if response is valid
-        if (!q?.data?.response) throw new Error("Invalid API response");
+        if (!q?.data) throw new Error("Invalid API response");
         
         // Send the response
-        return await m.reply(q.data.response);
+        return await m.reply(q.data);
     } catch (error) {
         console.error("GPT Error:", error);
         return await m.reply("An error occurred while processing your request");
